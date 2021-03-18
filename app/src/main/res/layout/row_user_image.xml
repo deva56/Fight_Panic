@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/UserChatMessageImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/chat_user_partner_image_bg"
+        />
+
+</LinearLayout>

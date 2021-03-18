@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fightpanicnew">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE " />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".FightPanic"
+        android:allowBackup="false"
+        android:fullBackupOnly="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="n">
+
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_fist_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <receiver android:name=".BroadcastReceivers.DirectReplyReceiver" />
+        <receiver android:name=".BroadcastReceivers.LeaveRoomReceiver" />
+
+        <service
+            android:name=".Services.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Services.SocketBackgroundService"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Activity.HowToUseApplication"
+            android:parentActivityName=".Activity.MainMenu"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.MainMenu" />
+        </activity>
+        <activity
+            android:name=".Activity.AboutApplication"
+            android:parentActivityName=".Activity.MainMenu"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.MainMenu" />
+        </activity>
+        <activity
+            android:name=".Activity.EditProfileInformation"
+            android:parentActivityName=".Activity.Profile"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Profile" />
+        </activity>
+        <activity
+            android:name=".Activity.Profile"
+            android:parentActivityName=".Activity.MainMenu"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.MainMenu" />
+        </activity>
+        <activity
+            android:name=".Activity.Settings"
+            android:parentActivityName=".Activity.MainMenu"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.MainMenu" />
+        </activity>
+        <activity
+            android:name=".Activity.Chat"
+            android:launchMode="singleTask"
+            android:parentActivityName=".Activity.FightClub"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.FightClub" />
+        </activity>
+        <activity
+            android:name=".Activity.FightClub"
+            android:parentActivityName=".Activity.MainMenu"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.MainMenu" />
+        </activity>
+        <activity
+            android:name=".Activity.AddOrEditPillDiaryRecord"
+            android:parentActivityName=".Activity.PillDiary"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.PillDiary" />
+        </activity>
+        <activity
+            android:name=".Activity.PillDiary"
+            android:parentActivityName=".Activity.MainMenu"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.MainMenu" />
+        </activity>
+        <activity
+            android:name=".Activity.AddOrEditPanicAttackRecord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PanicCalendar"
+            android:parentActivityName=".Activity.MainMenu"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.MainMenu" />
+        </activity>
+        <activity
+            android:name=".Activity.RegistrationOrLoginOrSkip"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.StartingLogo"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MainMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Registration.RegistrationBasicDetails"
+            android:parentActivityName=".Activity.RegistrationOrLoginOrSkip"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.RegistrationOrLoginOrSkip" />
+        </activity>
+        <activity
+            android:name=".Activity.Registration.RegistrationUserDetails"
+            android:parentActivityName=".Activity.Registration.RegistrationBasicDetails"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Registration.RegistrationBasicDetails" />
+        </activity>
+        <activity
+            android:name=".Activity.Registration.RegistrationFinish"
+            android:parentActivityName=".Activity.Registration.RegistrationUserDetails"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Registration.RegistrationUserDetails" />
+        </activity>
+        <activity
+            android:name=".Activity.ProfileRegisterOrLogin"
+            android:parentActivityName=".Activity.MainMenu"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.MainMenu" />
+        </activity>
+    </application>
+
+</manifest>

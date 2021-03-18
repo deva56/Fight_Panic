@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/profileGoBack"
+            android:icon="@drawable/ic_go_back_arrow"
+            android:title="@string/goBackToMainMenu" />
+        <item
+            android:id="@+id/profileEditInformation"
+            android:icon="@drawable/ic_save"
+            android:title="@string/editProfileInformation" />
+        <item
+            android:id="@+id/profileChangePassword"
+            android:icon="@drawable/ic_room_lock_closed"
+            android:title="@string/changePassword" />
+        <item
+            android:id="@+id/profileLogoutButton"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

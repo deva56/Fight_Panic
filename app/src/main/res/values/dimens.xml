@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="emailDrawable">20dp</dimen>
+
+    <!-- REGISTRATION OR LOGIN OR SKIP MENU PORTRAIT -->
+    <!-- Small Dimensions = "Medium Dimensions * 0.75" For Example: 210*.75 = 157.5-->
+    <dimen name="SkipThisStepForNowPaddingSmall">16dp</dimen>
+    <dimen name="SkipThisStepForNowPaddingMedium">50dp</dimen>
+    <dimen name="SkipThisStepForNowPaddingLarge">75dp</dimen>
+    <dimen name="SkipThisStepForNowPaddingExtraLarge">100dp</dimen>
+    <!-- Small Dimensions = "Medium Dimensions * 0.75" For Example: 210*.75 = 157.5-->
+    <!-- Medium Dimensions -->
+    <dimen name="button1_width_medium">210dip</dimen>
+
+    <!-- Large Dimensions = "Medium Dimensions * 1.5" For Example: 210*1.5 = 315 -->
+    <dimen name="button1_width_large">315dip</dimen>
+
+    <!-- XLarge Dimensions = "Medium Dimensions * 2" For Example: 210*1.5 = 420 -->
+    <dimen name="button1_width_xLarge">420dip</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <!-- REGISTRATION OR LOGIN OR SKIP MENU PORTRAIT -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="child_margin_top">24dp</dimen>
+    <dimen name="logo_height">80dp</dimen>
+    <dimen name="button_padding">48dp</dimen>
+    <dimen name="button_margin">24dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_items_margin">8dp</dimen>
+
+</resources>

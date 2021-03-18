@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark">#000000</color>
+    <color name="logoBackground">#022B53</color>
+    <color name="fontColor">#395099</color>
+    <color name="white">#ffff</color>
+    <color name="red">#FF0000</color>
+    <color name="light_grey">#F1F1F1</color>
+    <color name="grey">#818181</color>
+    <color name="darkGrey">#121212</color>
+
+    <color name="username0">#e21400</color>
+    <color name="username1">#91580f</color>
+    <color name="username2">#f8a700</color>
+    <color name="username3">#f78b00</color>
+    <color name="username4">#58dc00</color>
+    <color name="username5">#287b00</color>
+    <color name="username6">#a8f07a</color>
+    <color name="username7">#4ae8c4</color>
+    <color name="username8">#3b88eb</color>
+    <color name="username9">#3824aa</color>
+    <color name="username10">#a700ff</color>
+    <color name="username11">#d300e7</color>
+
+    <!--Theme colors night-->
+    <color name="colorPrimaryDark">#121212</color>
+    <color name="colorPrimary">#90caf9</color>
+    <color name="colorPrimaryVariant">#1976d2</color>
+    <color name="colorOnPrimary">#000000</color>
+    <color name="colorSecondary">#82d5fa</color>
+    <color name="colorSecondaryVariant">#0289d1</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorBackground">#000000</color>
+    <color name="colorOnBackground">#FFFFFF</color>
+    <color name="colorSurface">#121212</color>
+    <color name="colorSurfaceChat">#121212</color>
+    <color name="colorOnSurface">#FFFFFF</color>
+    <color name="colorError">#B00020</color>
+    <color name="colorOnError">#FFFFFF</color>
+</resources>

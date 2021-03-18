@@ -1,0 +1,99 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+    <array name="username_colors">
+        <item>@color/username0</item>
+        <item>@color/username1</item>
+        <item>@color/username2</item>
+        <item>@color/username3</item>
+        <item>@color/username4</item>
+        <item>@color/username5</item>
+        <item>@color/username6</item>
+        <item>@color/username7</item>
+        <item>@color/username8</item>
+        <item>@color/username9</item>
+        <item>@color/username10</item>
+        <item>@color/username11</item>
+    </array>
+
+    <!--Default profilne slike-->
+    <array name="femaleProfileDefaultAvatars">
+        <item>@drawable/ic_036_woman</item>
+        <item>@drawable/ic_035_woman_1</item>
+        <item>@drawable/ic_034_woman_2</item>
+        <item>@drawable/ic_013_woman_3</item>
+        <item>@drawable/ic_012_woman_4</item>
+        <item>@drawable/ic_011_woman_5</item>
+        <item>@drawable/ic_011_woman_5</item>
+        <item>@drawable/ic_010_woman_6</item>
+        <item>@drawable/ic_009_woman_7</item>
+        <item>@drawable/ic_008_woman_8</item>
+        <item>@drawable/ic_007_woman_9</item>
+        <item>@drawable/ic_006_woman_10</item>
+        <item>@drawable/ic_005_woman_11</item>
+        <item>@drawable/ic_004_woman_12</item>
+        <item>@drawable/ic_003_woman_13</item>
+        <item>@drawable/ic_002_woman_14</item>
+    </array>
+
+    <array name="maleProfileDefaultAvatars">
+        <item>@drawable/ic_026_man</item>
+        <item>@drawable/ic_025_man_1</item>
+        <item>@drawable/ic_024_man_2</item>
+        <item>@drawable/ic_023_man_3</item>
+        <item>@drawable/ic_022_man_4</item>
+        <item>@drawable/ic_021_man_5</item>
+        <item>@drawable/ic_020_man_6</item>
+        <item>@drawable/ic_019_man_7</item>
+        <item>@drawable/ic_018_man_8</item>
+        <item>@drawable/ic_017_man_9</item>
+        <item>@drawable/ic_016_man_10</item>
+        <item>@drawable/ic_032_boy_1</item>
+        <item>@drawable/ic_031_boy_2</item>
+        <item>@drawable/ic_030_boy_3</item>
+        <item>@drawable/ic_029_boy_4</item>
+    </array>
+
+    <array name="noGenderProfileDefaultAvatars">
+        <item>@drawable/ic_036_woman</item>
+        <item>@drawable/ic_035_woman_1</item>
+        <item>@drawable/ic_034_woman_2</item>
+        <item>@drawable/ic_013_woman_3</item>
+        <item>@drawable/ic_012_woman_4</item>
+        <item>@drawable/ic_011_woman_5</item>
+        <item>@drawable/ic_011_woman_5</item>
+        <item>@drawable/ic_010_woman_6</item>
+        <item>@drawable/ic_009_woman_7</item>
+        <item>@drawable/ic_008_woman_8</item>
+        <item>@drawable/ic_007_woman_9</item>
+        <item>@drawable/ic_006_woman_10</item>
+        <item>@drawable/ic_005_woman_11</item>
+        <item>@drawable/ic_004_woman_12</item>
+        <item>@drawable/ic_003_woman_13</item>
+        <item>@drawable/ic_002_woman_14</item>
+        <item>@drawable/ic_026_man</item>
+        <item>@drawable/ic_025_man_1</item>
+        <item>@drawable/ic_024_man_2</item>
+        <item>@drawable/ic_023_man_3</item>
+        <item>@drawable/ic_022_man_4</item>
+        <item>@drawable/ic_021_man_5</item>
+        <item>@drawable/ic_020_man_6</item>
+        <item>@drawable/ic_019_man_7</item>
+        <item>@drawable/ic_018_man_8</item>
+        <item>@drawable/ic_017_man_9</item>
+        <item>@drawable/ic_016_man_10</item>
+        <item>@drawable/ic_032_boy_1</item>
+        <item>@drawable/ic_031_boy_2</item>
+        <item>@drawable/ic_030_boy_3</item>
+        <item>@drawable/ic_029_boy_4</item>
+    </array>
+</resources>

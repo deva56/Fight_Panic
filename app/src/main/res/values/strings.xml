@@ -1,0 +1,222 @@
+<resources>
+    <string name="app_name">Fight Panic</string>
+
+    <!--Općenite stvari za lozinkama i drugo-->
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm password</string>
+    <string name="forgotPassword">Forgot password?</string>
+    <string name="tokenNotEmpty">Token can\'t be empty!</string>
+    <string name="Token">Token</string>
+    <string name="newPassword">New password</string>
+
+    <!--Povratne poruke pri radnjama sa bazom podataka i serverom-->
+    <string name="editProfileSuccess">Profile information successfully updated.</string>
+    <string name="editProfileFailure">Error in updating profile information.</string>
+    <string name="logOutSuccessfully">Successfully logged out.</string>
+    <string name="logInSuccessfully">Successfully logged in.</string>
+    <string name="loginInUnsuccessfull">There was error logging you in. Please try again.</string>
+    <string name="errorInUpdatingProfilePicture">Error in updating profile picture.</string>
+    <string name="profilePictureUpdated">Profile picture updated.</string>
+    <string name="errorInUpdatingProfilePictureOnServer">Error in updating profile picture information on server.</string>
+    <string name="errorInSendingProfilePictureToServer">Error in sending profile picture to server.</string>
+    <string name="errorInLoadingPicture">Error in loading picture. Please try again.</string>
+    <string name="errorInUpdatingProfilePictureOnDevice">Error in updating profile picture on device.</string>
+    <string name="invalidCredentials">Invalid e-mail or password!</string>
+    <string name="userNotFound">User not found!</string>
+
+    <!--Gumbi-->
+    <string name="mainMenuHowToUseApp">How to use this app</string>
+    <string name="mainMenuStartFighting">Start fighting</string>
+    <string name="mainMenuPanicCalendar">Panic calendar</string>
+    <string name="mainMenuPillDiary">Pill diary</string>
+    <string name="mainMenuFightClub">Fight club</string>
+    <string name="profileChangeProfilePicture">Change profile picture</string>
+    <string name="profileChangeMyInformation">Change my information</string>
+    <string name="profileChangePictureChooser">Select picture</string>
+    <string name="addDateOfPanicAttack">Date of attack</string>
+    <string name="addTimeOfPanicAttack">Time of attack</string>
+    <string name="resetPassword">Reset password</string>
+    <string name="skip">Skip</string>
+    <string name="register">Register</string>
+    <string name="login">Log In</string>
+    <string name="dontHaveAccountYet">Don\'t have an account yet?</string>
+    <string name="loginHeader">Login</string>
+
+    <!--Registracija i profilni default podatci-->
+    <string name="registerUserInformationHeadingTextView">Information entered here is optional and will only be used so the others can see your basic details. If you want, you can skip this part for now or enter only some details and then later through your profile icon you can enter the rest.</string>
+    <string name="registerUserInformationProfilePictureTextView">You can choose to change profile picture from one of yours from the gallery or you can choose from some default avatars we have prepared. If you do not choose any, random one will be given to you.</string>
+    <string name="registrationText">Register new account.</string>
+    <string name="registration_text">Register a new account, log into existing one or skip this step for now.</string>
+    <string name="nothingAboutMeYet">Nothing about me yet.</string>
+    <string name="privateForNow">I want to keep this private for now.</string>
+    <string name="userNameNotEmpty">Username can\'t be empty!</string>
+    <string name="emailNotEmpty">Email can\'t be empty!</string>
+    <string name="emailNotValid">Email should be valid!</string>
+    <string name="passwordNotEmpty">Password can\'t be empty!</string>
+    <string name="registrationPasswordTooShort">Password needs to have at least 8 characters.</string>
+    <string name="passwordConfirmationNotEmpty">Password confirmation can\'t be empty!</string>
+    <string name="passwordConfirmationDoesntMatch">Password confirmation should match the password!</string>
+    <string name="registrationBasicDetails">Account details</string>
+    <string name="userWithSameEmailExists">User with same email already exists!</string>
+    <string name="userWithSameUsernameExists">User with same username already exists!</string>
+    <string name="registrationUserDetails">User information</string>
+    <string name="registrationFinish">Registration finish</string>
+    <string name="registrationSuccessful">Registration successful. Log into your account to continue.</string>
+    <string name="registrationAgeNotInConstraint">Age needs to be in range of 12 to 99 years</string>
+
+    <!--Registracija opcionalnih user podataka-->
+    <string name="registerUserInformationAge">Age</string>
+    <string name="registerUserDetailsFirstName">First name</string>
+    <string name="registerUserDetailsLastName">Last name</string>
+    <string name="registerUserDetailsLocation">Location</string>
+    <string name="registerUserDetailsOccupation">Occupation</string>
+    <string name="registerUserDetailsShortDescription">Short description</string>
+    <string name="finish">Finish</string>
+
+    <!--Add or edit panic attack record aktivnost-->
+    <string name="panicCalendarHelpWindowDescriptionText">Panic calendar is a tool which helps you track your panic attacks. Each time you have one you should add it and then you will have exact time and date the attack occurred with the description of it and it\'s strength for later reference.</string>
+    <string name="panicCalendarHelpWindowMainMenuDescriptionText">Title and description should closely match your attack and it\'s characteristics. Attack strength should approximately match your panic attack strength.</string>
+    <string name="attackStrength">Attack strength</string>
+    <string name="title">Title</string>
+    <string name="dateOfAttack">Date of attack (optional)</string>
+    <string name="timeOfAttack">Time of attack (optional)</string>
+    <string name="description">Description</string>
+    <string name="titleCantBeEmpty">Title can\'t be empty</string>
+    <string name="descriptionCantBeEmpty">Description can\'t be empty</string>
+    <string name="recordNotSaved">Record not saved</string>
+    <string name="recordNotUpdated">Record not updated</string>
+    <string name="gotIt">Got it</string>
+    <string name="noRecordsYet">You don\'t have any records yet. Do you want to add one?</string>
+    <string name="confirmDeleteRecord">Are you sure you want to delete this record?</string>
+    <string name="deleteAllFromDatabasePanicCalendar">Are you sure you want to delete all records from database? NOTE: This can\'t be undone!</string>
+    <string name="doIt">Do it</string>
+    <string name="goBack">Go back</string>
+    <string name="editRecord">Edit record</string>
+    <string name="addNewRecord">Add new record</string>
+    <string name="deleteRecord">Delete record</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="panicAttackRecordCantBeDeleted">Panic attack record can\'t be deleted</string>
+    <string name="panicAttackRecordCantBeUpdated">Panic attack record can\'t be updated</string>
+    <string name="panicAttackRecordSaved">Panic attack record saved</string>
+    <string name="panicAttackRecordUpdated">Panic attack record updated</string>
+    <string name="panicAttackErrorInSaving">Error in saving record</string>
+    <string name="panicAttackErrorInUpdating">Error in updating record</string>
+    <string name="panicAttackRecordDeleted">Panic attack record deleted</string>
+    <string name="errorInPanicAttackRecordDelete">Error in deleting record</string>
+    <string name="panicAttackRecordsCantDelete">Panic attack records couldn\'t be deleted</string>
+    <string name="panicAttackRecordsDeleted">All panic attack records deleted</string>
+    <string name="noPanicAttackRecordToDelete">There is no panic attack records to delete</string>
+    <string name="recordCreationDate">Record creation date</string>
+
+    <!--Add or edit pill diary record aktivnost-->
+    <string name="pillDiaryHelpWindowDescriptionText">Pill diary is a tool which helps you track your pill intake schedule. Remembering exact time when pill was drank is very important but sometimes very hard to remember. This tool helps you to know exact time you took one.</string>
+    <string name="pillDiaryHelpWindowAddRecordDescriptionText">Date of creating record is added automatically when you create a new record. Extra notes are used if you need any more information about your medication use at a later date.</string>
+    <string name="medicationName">Medication name</string>
+    <string name="extraNotes">Extra notes (optional)</string>
+    <string name="dateOfTakingMedication">Date of taking medication (optional)</string>
+    <string name="timeOfTakingMedication">Time of taking medication (optional)</string>
+    <string name="medicationCantBeEmpty">Medication name can\'t be empty</string>
+    <string name="pillDiaryRecordSaved">Pill diary record saved</string>
+    <string name="pillDiaryRecordUpdated">Pill diary record updated</string>
+    <string name="pillDiaryRecordDeleted">Pill diary record deleted</string>
+    <string name="pillDiaryRecordsCantDelete">Pill diary records couldn\'t be deleted</string>
+    <string name="pillDiaryRecordsDeleted">All pill diary records deleted</string>
+    <string name="noPillDiaryRecordToDelete">There is no pill diary records to delete</string>
+    <string name="pillDiaryRecordCantBeDeleted">Pill diary record can\'t be deleted</string>
+    <string name="pillDiaryRecordCantBeUpdated">Pill diary record can\'t be updated</string>
+
+    <!--Menu itemi-->
+    <string name="panicCalendarAddRecord">Add record</string>
+    <string name="help">Help</string>
+    <string name="settings">Settings</string>
+    <string name="aboutApplication">About application</string>
+    <string name="deleteAllRecords">Delete all records</string>
+    <string name="logout">Logout</string>
+    <string name="next">Next</string>
+    <string name="editProfileSave">Save changes</string>
+    <string name="editProfileInformation">Edit profile information</string>
+    <string name="goBackToMainMenu">Back to main menu</string>
+
+    <!--Profilni podatci-->
+    <string name="aboutMe">About me</string>
+    <string name="profileUsername">Username</string>
+    <string name="profileEmail">E-mail</string>
+    <string name="profileFirstName">First name</string>
+    <string name="profileLastName">Last name</string>
+    <string name="profileGender">Gender</string>
+    <string name="profileAge">Age</string>
+    <string name="profileOccupation">Occupation</string>
+    <string name="profileLocation">Location</string>
+    <string name="profileShortDescription">Short description</string>
+    <string name="genderNameMale">Male</string>
+    <string name="genderNameFemale">Female</string>
+    <string name="genderNameUnknown">Unimportant</string>
+    <string name="errorInLoadingProfileData">Error in loading profile data.</string>
+    <string name="profileHelp">This is the place where you can see all your profile information and manage it.</string>
+
+    <!--Fight club i chat stringovi-->
+    <string name="roomNameNotEmpty">Room name can\'t be empty!</string>
+    <string name="roomDescriptionNotEmpty">Room description can\'t be empty!</string>
+    <string name="roomPasswordNotEmpty">Room password can\'t be empty!</string>
+    <string name="roomPasswordInvalid">Room password is invalid!</string>
+    <string name="roomPasswordTooShort">Room password needs to have at least 6 characters.</string>
+    <string name="roomJoinError">There was error joining the chat room.</string>
+    <string name="leaveRoom">Leave room</string>
+    <string name="remoteReplyHint">Your answer</string>
+    <string name="reply">Reply</string>
+    <string name="me">Me</string>
+    <string name="joinChatRoom">Join chat room</string>
+    <string name="roomDescription">Room description</string>
+    <string name="roomName">Room name</string>
+    <string name="roomPassword">Room password</string>
+    <string name="joinRoom">Join room</string>
+    <string name="createNewChatRoom">Create new chat room</string>
+    <string name="createRoom">Create room</string>
+    <string name="makeRoomPrivate">Make room private?</string>
+    <string name="fightClubHelp">Fight club is a place where you can create or join a chat group. Groups are places where you can talk or express your feelings with people of similar thoughts. To join a group simply find one and click to join or if it\'s a closed one you will need password also. To create one choose it\'s name, description and possibility to be open or closed one.</string>
+    <string name="fightClubLogIn">To use functionality of Fight club chat groups you need to have a registered account and be logged in.</string>
+    <string name="errorInLoadingChats">Error in loading chat history.</string>
+    <string name="lastPersonInRoom">You are the last person in room. If you leave the room will be deleted. Do you wish to leave or stay?</string>
+    <string name="chatLeaveWarning">If you leave the room you will lose all the data from this chat including images that are stored on your device. Do you wish to see this warning in the future?</string>
+    <string name="noChatsYet">There is no chat rooms active at the moment. Be the first to make one.</string>
+    <string name="stay">Stay</string>
+    <string name="leave">Leave</string>
+    <string name="leaveAndDontShowAgain">Leave and don\'t show this warning again</string>
+    <string name="leaveButShowAgain">Leave but show me this warning again</string>
+    <string name="roomWithSameNameAlreadyExists">Room with same name already exists.</string>
+    <string name="roomDeletedWhileAway">Room in which you were before you gone away was deleted because there was no active users in it.</string>
+
+    <!--O aplikaciji i kako koristiti-->
+    <string name="howToUseApplication">How to use application</string>
+    <string name="howToUseApplicationDescription">"Pill diary is a tool for persons that between all need to drink medicine for their diagnose. It helps you to manage your pill intake with correct name of the pill, date and time. It removes the need to memorize the time you took the pill if you took her at all and makes it easier to categorize it and search later.\nPanic calendar is a tool for persons that suffer from panic disorder or general panic attacks. Main problem with panic attacks and panic disorder in general is that we forget the symptoms and the feel we had when we experience the seizure but which is critical in fighting them when another attack comes. With panic calendar it is easy to give each attack strength, description and date and time it happened for further reference.\nFight club is a place where you can join many chat groups with people that have similar problems or create your own. There you can ask for advice, give advice to somebody else or connect with somebody on other platforms to more privately discuss your issues.  "</string>
+    <string name="aboutApplicationLongText">This application is a project of a single person. Suffering for a few years from the problem that this application was made upon I tried to make something that would help people get with their diagnose easier or if they didn\'t have any not to fight their demons alone. It is estimated that every third person in the world suffers from some kind of anxiety and that is a huge number. Anxiety is a huge category that many smaller diagnoses fall into and that\'s why not every person can be subjected to the same treatment. Feeling most of this myself I know that sometimes conversation is the best cure and that\'s why I believe group chats are the strongest feature of this application. While that is sometimes enough sometimes you need additional help and several other in-app tools help to organize your daily struggle. Take note though that this isn\'t to be confused with real medical advice and is only here to help you fight or if you have tried everything else and you just want advice from other people.</string>
+    <string name="aboutApplicationContact">If you have some thoughts you would like to share with me, propose a new feature, tell me about a bug or just say hi you can do that in the e-mail address below.</string>
+    <string name="aboutApplicationWebsite">If you would like to support me and this product to run without problems for a long time you can do that on the website below. You can also find information about application and it\'s development state there.</string>
+    <string name="version">Version 1.0.0</string>
+
+    <!--Settings-->
+    <string name="visuals_header">Visuals</string>
+    <string name="darkModeTitle">Dark mode</string>
+    <string name="darkModeSummary">Change theme to dark or normal</string>
+    
+    <!--Forgot password-->
+    <string name="checkMailForInstructions">Check e-mail for instructions.</string>
+    <string name="timeOut">Time out! Try again.</string>
+    <string name="invalidToken">Invalid token.</string>
+    <string name="passwordChangedSuccessfully">Password Changed Successfully!</string>
+
+    <!--Change password-->
+    <string name="changePassword">Change password</string>
+    <string name="changingOfPassword">Changing of password</string>
+    <string name="oldPassword">Old password</string>
+    <string name="confirmNewPassword">Confirm new password</string>
+    <string name="oldPasswordNotEmpty">Old password can\'t be empty!</string>
+    <string name="newPasswordCantBeEmpty">New password can\'t be empty!</string>
+    <string name="invalidOldPassword">Invalid old password!</string>
+
+    <!--Generalno-->
+    <string name="imageFormatNotSupported">Image format is not supported. Please try with another image.</string>
+    <string name="noInternetConnection">There is networking issues detected. Check your network connection or try later again.</string>
+
+</resources>

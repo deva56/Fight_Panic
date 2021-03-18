@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/PartnerUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/mont_light"
+        android:paddingStart="2dp"
+        android:paddingEnd="10dp"
+        android:text="Joyce"
+        android:textSize="12sp"
+        android:layout_marginLeft="7dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="10dp" />
+
+    <ImageView
+        android:id="@+id/PartnerChatMessageImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="5dp"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:paddingStart="2dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="2dp"
+        android:background="@drawable/chat_user_partner_image_bg"
+        />
+
+</LinearLayout>
