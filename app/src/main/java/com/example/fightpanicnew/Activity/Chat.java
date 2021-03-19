@@ -176,6 +176,7 @@ public class Chat extends AppCompatActivity {
         socket.on("leaveRoomFinal", onLeaveRoomFinal);
         socket.on("leaveRoomWarning", onLeaveRoomWarning);
         socket.on("roomDeleted", onRoomDeleted);
+        socket.on("userSetActive", onUserSetActive);
 
         if (isBackgroundTerminated) {
             compositeDisposable2.add(chatViewModel.getChatMessagesList(roomName)
@@ -549,6 +550,13 @@ public class Chat extends AppCompatActivity {
         finish();
     };
 
+    Emitter.Listener onUserSetActive = args -> {
+        compositeDisposable2.add(chatViewModel.getChatMessagesList(roomName)
+                .observeOn(io.reactivex.schedulers.Schedulers.io())
+                .subscribeOn(io.reactivex.schedulers.Schedulers.io())
+                .subscribe(this::onSuccessGetAllChats, this::onFailureGetAllChats));
+    };
+
     private void sendMessageImage(Bitmap bitmap) {
         userCurrentlyTyping = true;
 
@@ -696,26 +704,17 @@ public class Chat extends AppCompatActivity {
         socket.off("stopTyping", stopTyping);
         socket.off("leaveRoom", onLeaveRoom);
         socket.off("leaveRoomFinal", onLeaveRoomFinal);
+        socket.off("roomDeleted", onRoomDeleted);
+        socket.off("userSetActive", onUserSetActive);
+
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
 
-        ChatClasses.sendMessageUserInactiveOrActive sendMessageUserInactiveOrActive = new ChatClasses.sendMessageUserInactiveOrActive(roomName, username);
-        String jsonData = gson.toJson(sendMessageUserInactiveOrActive);
-        socket.emit("userActive", jsonData);
-
         Intent foregroundService = new Intent(this, SocketBackgroundService.class);
         stopService(foregroundService);
-
-        socket.on("newUserToChatRoom", onNewUser);
-        socket.on("updateChat", onUpdateChat);
-        socket.on("userLeftChatRoom", onUserLeft);
-        socket.on("typing", typing);
-        socket.on("stopTyping", stopTyping);
-        socket.on("leaveRoom", onLeaveRoom);
-        socket.on("leaveRoomFinal", onLeaveRoomFinal);
 
         SharedPreferences sharedPreferencesBackgroundTerminated = getSharedPreferences(IS_BACKGROUND_TERMINATED, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferencesBackgroundTerminated.edit();
@@ -727,10 +726,19 @@ public class Chat extends AppCompatActivity {
 
         isBackgroundTerminated = false;
 
-        compositeDisposable2.add(chatViewModel.getChatMessagesList(roomName)
-                .observeOn(io.reactivex.schedulers.Schedulers.io())
-                .subscribeOn(io.reactivex.schedulers.Schedulers.io())
-                .subscribe(this::onSuccessGetAllChats, this::onFailureGetAllChats));
+        socket.on("newUserToChatRoom", onNewUser);
+        socket.on("updateChat", onUpdateChat);
+        socket.on("userLeftChatRoom", onUserLeft);
+        socket.on("typing", typing);
+        socket.on("stopTyping", stopTyping);
+        socket.on("leaveRoom", onLeaveRoom);
+        socket.on("leaveRoomFinal", onLeaveRoomFinal);
+        socket.on("roomDeleted", onRoomDeleted);
+        socket.on("userSetActive", onUserSetActive);
+
+        ChatClasses.sendMessageUserInactiveOrActive sendMessageUserInactiveOrActive = new ChatClasses.sendMessageUserInactiveOrActive(roomName, username);
+        String jsonData = gson.toJson(sendMessageUserInactiveOrActive);
+        socket.emit("userActive", jsonData);
     }
 
     private void onSuccessGetAllChats(List<ChatMessages> chatMessages) {
@@ -783,6 +791,7 @@ public class Chat extends AppCompatActivity {
         socket.off("leaveRoomFinal", onLeaveRoomFinal);
         socket.off("leaveRoomWarning", onLeaveRoomWarning);
         socket.off("roomDeleted", onRoomDeleted);
+        socket.off("userSetActive", onUserSetActive);
         socket = null;
     }
 

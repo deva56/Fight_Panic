@@ -86,6 +86,7 @@ public class SocketBackgroundService extends Service {
         socket.on("newUserToChatRoom", onNewUser);
         socket.on("updateChat", onUpdateChat);
         socket.on("userLeftChatRoom", onUserLeft);
+        socket.on("killForegroundService", onKillForegroundService);
     }
 
     @Override
@@ -379,6 +380,13 @@ public class SocketBackgroundService extends Service {
         }
     };
 
+    Emitter.Listener onKillForegroundService = new Emitter.Listener() {
+        @Override
+        public void call(Object... args) {
+            stopSelf();
+        }
+    };
+
     private void updateNotification() {
 
         //------dio za direct reply gumb u notifikaciji-----
@@ -526,6 +534,7 @@ public class SocketBackgroundService extends Service {
         socket.off("newUserToChatRoom", onNewUser);
         socket.off("updateChat", onUpdateChat);
         socket.off("userLeftChatRoom", onUserLeft);
+        socket.off("killForegroundService", onKillForegroundService);
         socket = null;
     }
 }
