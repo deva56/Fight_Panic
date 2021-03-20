@@ -1,6 +1,6 @@
 # FightPanic
 
-Aplikacija za pomoć protiv paničnih napadaja i generalne anskioznosti. 
+Native android aplikacija pisana u Javi za pomoć protiv paničnih napadaja i generalne anskioznosti. 
 
 Koristi popratne usluge koje su omogućene pomoću firebase-a, Node.js servera i MongoDB NoSQL baze podataka.
 Node.js server je hostan na Heroku platformi.
